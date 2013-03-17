@@ -1,0 +1,25 @@
+{
+  "name": "neuvo-euler",
+  "author": "Alex Chapman <achap5dk@gmail.com>",
+  "description": "project euler solutions done in node",
+  "version": "1.0.0",
+  "contributors": [
+    {
+      "name": "Alex Chapman",
+      "email": "achap5dk@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nuevoalex/Euler.git"
+  },
+  "keywords": [
+    "euler",
+    "donkies",
+    "bananas"
+  ],
+  "dependencies" : {
+    "underscore"   :  "*"
+  },
+  "license": "MIT"
+}
