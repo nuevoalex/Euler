@@ -23,16 +23,12 @@ var is_abundant = function (num) {
 
 var abundant_numbers = _.filter(_.range(1, 28124), is_abundant);
 
-console.log(abundant_numbers.length);
-
 var abundant_sums = {};
 _.each(abundant_numbers, function (num) {
     _.each(abundant_numbers, function (inum) {
         abundant_sums[num + inum] = true;
     });
 });
-
-console.log(_.keys(abundant_sums).length);
 
 var nsum = _.reduce(_.range(0, 28124), function (memo, num) {
     return memo + (abundant_sums[num] ? 0 : num);
